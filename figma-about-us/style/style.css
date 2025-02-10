@@ -124,6 +124,7 @@ section {
   flex-basis: 100%;
   height: 80%;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 
 .sec1 b {
@@ -142,10 +143,11 @@ section {
   width: 8%;
 }
 i {
-  margin-left: 40%;
+  margin-left: 35%;
 }
+
 .p3 {
-  flex-basis: 25%;
+  min-width: 237px;
   line-height: 1.9;
 }
 
@@ -169,7 +171,8 @@ i {
 }
 
 .p4 {
-  flex-basis: 25%;
+  width: 260px;
+  padding-top: 5px;
   line-height: 1;
 }
 
@@ -215,6 +218,7 @@ i {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+  width: 100%;
 }
 
 .bottom .p1 {
@@ -235,4 +239,79 @@ i {
   justify-content: space-between;
   margin-right: 9%;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  .top {
+    height: 430px;
+  }
+
+  .p3 {
+    width: 300px;
+  }
+
+  .p4 {
+    flex-basis: 42%;
+    padding-top: 30px;
+  }
+
+  .p5 {
+    padding-left: 200px;
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4,
+  .p5 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 790px) {
+  i {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 730px) {
+  i {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 664px) {
+  .p4 {
+    min-width: 300px;
+  }
+
+  .p5 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .top {
+    height: 600px;
+  }
+}
+
+@media (max-width: 458px) {
+  .top {
+    height: 700px;
+  }
+
+  .p5 {
+    flex-direction: row;
+    padding-bottom: 0px;
+    width: 300px;
+    height: 50px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 276px) {
+  .sec1 {
+    height: 1200px;
+  }
 }
